@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #62615f70;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    display: flex;
+}
+.logo{
+    margin-right: 200px;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    
+}
+header li{
+    float: left;
+    
+}
+header li a{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 18px;
+    
+}
+header li a:hover{
+    color: #0c8282;
+    font-size: 20px;
+}
+body{
+    background-image: url(../img/cloud\ 2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.main{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 100px 200px;
+    position: absolute;
+}
+.information{
+    position: relative;
+    top: 200px;
+    left: 500px;
+    max-width: 500px;
+    text-align: center;
+    align-items: center;
+    
+    border-style: solid;
+    border-color: #65e892;
+   padding: 30px;
+   color: #000;
+}
+.information p{
+    padding: 1rem 2rem;
+}
+input {
+    font-size: 1.2rem;
+    flex-basis: 100%;
+    width: calc(100% - 2px);
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.2rem;
+  }
+  .SubmitButton{
+    width: 80px;
+    height: 20px;
+    background-color: #65e892;
+  }
+  .SubmitButton:active,
+.SubmitButton:focus {
+  border-bottom-style: none;
+  border-color: #ffffff;
+
+}
+
+.SubmitButton:hover {
+  border-bottom-style: none;
+  border-color: #ffffff;
+}
+
+.child{
+    width: 300px;
+    height: 300px;
+    background-color: #0c8282;
+    padding: 100px;
+}
+.baby{
+    width: 100px;
+    height: 100px;
+    background-color: #ef9037;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 0;
+}
+.reklama{
+    position: sticky;
+    top: 80px;
+    z-index: 4;
+}
+.social{
+    width: 50px;
+    height: 100px;
+    /* background-color: #ef9037; */
+    position: fixed;
+    right: 10px;
+    top: 200px;
+    z-index: 1;
+}
+.social .fb, .social .insta {
+width: 100%;
+height: 50%;
+overflow: hidden;
+background-repeat: no-repeat;
+background-size: 100%;
+}
+.social .insta{
+
+    background-image: url(../img/instagram.png);
+}
+.social .fb{
+    background-image: url(../img/facebook.png);
+}
+.social .fb a, .social .insta a{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+.switch {
+	position: fixed;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	top: 25px;
+	z-index: 10;
+	right: 100px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgb(0, 0, 0);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: rgb(255, 255, 255);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background-color: #ffffff;
+}
+
+input:checked + .slider:before {
+	background-color: #000000;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+.dark-mode{
+	background-color: black;
+	color: white;
+
+}
+.dark-mode header li a {
+
+	color: white;
+
+}
+.dark-mode .social {
+    background-color: #65e892;
+}
+.information{
+    display: block;
+}
+.dark-mode p, .dark-mode h1{
+    color: #ffffff;
+}
